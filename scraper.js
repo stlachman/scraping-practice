@@ -25,10 +25,14 @@ const getResults = async () => {
     const link = $(this)
       .find(".result-info .result-title")
       .attr("href");
+    const hood = $(this)
+      .find(".result-info .result-hood")
+      .text();
     apartments.push({
       price,
       title,
-      link
+      link,
+      hood
     });
   });
 
